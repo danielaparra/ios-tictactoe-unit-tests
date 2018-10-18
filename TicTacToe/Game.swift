@@ -27,6 +27,7 @@ struct Game {
         if game(board: board, isWonBy: activePlayer) {
             winningPlayer = activePlayer
             gameIsOver = true
+            self.activePlayer = nil
         } else if board.isFull {
             gameIsOver = true
             self.activePlayer = nil
